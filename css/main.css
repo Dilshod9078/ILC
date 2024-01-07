@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F4F7FA;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -334,4 +339,338 @@ template {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.site-header {
+  padding: 56px 0 120px;
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.header__demo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  margin-bottom: 48px;
+}
+
+.header__demo-inner {
+  width: 227px;
+  margin-left: 64px;
+}
+
+.header__demo-text {
+  color: #303030;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.header__navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.header__navbar-link {
+  transition: color 0, 4s linear;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+}
+.header__navbar-link:hover {
+  color: #273895;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  gap: 36px;
+}
+
+.header__phone {
+  transition: color 0.4s linear;
+  color: #303030;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+.header__phone:hover {
+  color: #273895;
+}
+
+.header__link {
+  transition: opacity 0.4s linear;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 16px 0;
+  width: 115px;
+  background-color: #273895;
+  border-radius: 15px;
+  text-align: center;
+}
+.header__link:hover {
+  opacity: 0.8;
+}
+
+.hamburger-btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #DEE6EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: none;
+}
+
+.mobile-btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: none;
+}
+
+@media (max-width: 947px) {
+  .header__navbar-list {
+    gap: 30px;
+  }
+}
+@media (max-width: 845px) {
+  .header__navbar {
+    display: none;
+  }
+  .header__demo {
+    margin-bottom: 0;
+  }
+  .header__demo-inner {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+}
+@media (max-width: 680px) {
+  .site-header {
+    padding: 22px 0 48px;
+  }
+  .header__phone, .header__link {
+    display: none;
+  }
+  .mobile-btn {
+    display: block;
+  }
+  .header__contact {
+    gap: 8px;
+  }
+  .header__logo-img {
+    width: 125px;
+    height: 45px;
+  }
+}
+.hero-section {
+  padding-bottom: 187px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__content {
+  width: 733px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  color: #262626;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 16px;
+}
+
+.hero__wrap {
+  width: 495px;
+  margin-bottom: 32px;
+}
+
+.hero__text {
+  color: #303030;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.hero__link {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 16px 0;
+  width: 268px;
+  background-color: #273895;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.hero__img {
+  position: absolute;
+  top: -142px;
+  right: 70px;
+}
+
+.hero__bonus {
+  width: 712px;
+  padding: 32px 48px;
+  margin-left: auto;
+  border-radius: 10px;
+  background-color: #F4F7FA;
+  box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+  position: relative;
+  z-index: 2;
+}
+
+.hero__bonus-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.hero__bonus-item1 {
+  width: 149px;
+  margin-right: 32px;
+}
+
+.hero__bonus-item2 {
+  width: 215px;
+  margin-right: 32px;
+}
+
+.hero__bonus-item3 {
+  width: 179px;
+}
+
+.hero__bonus-text {
+  margin-top: 8px;
+  color: #303030;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@media (max-width: 845px) {
+  .hero__img {
+    display: none;
+  }
+  .hero__content {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__wrap {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__bonus {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero {
+    padding-bottom: 154px;
+    background-image: url("../../Images/tablet.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  .hero__bonus-list {
+    text-align: center;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .hero__bonus-item1 {
+    width: 100%;
+    margin-right: 0;
+  }
+  .hero__bonus-item2 {
+    width: 100%;
+    margin-right: 0;
+  }
+  .hero__bonus-item3 {
+    width: 100%;
+  }
+  .hero__bonus-text {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    background-position-y: 91px;
+  }
+  .hero__title {
+    color: #262626;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .hero__wrap {
+    margin-bottom: 16px;
+  }
+  .hero__text {
+    color: #303030;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .hero__link {
+    max-width: 196px;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .hero__bonus {
+    padding: 32px 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

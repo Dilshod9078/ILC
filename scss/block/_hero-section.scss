@@ -1,0 +1,125 @@
+.hero-section{
+    padding-bottom: 187px;
+}
+.hero {
+   position: relative;
+}
+.hero__content {
+    width: 733px;
+    position: relative;
+    z-index: 2;
+}
+.hero__title {
+    @include textStyle($color:#262626, $fontSize:48px, $fontWeight:700, $lineHeight:55px );
+    margin-bottom: 16px;
+}
+.hero__wrap{
+  width: 495px;
+  margin-bottom: 32px;
+}
+.hero__text {
+    @include textStyle($color:#303030, $fontSize:14px, $fontWeight:400, $lineHeight:150%);
+  
+}
+.hero__link {
+    display: inline-block;
+    @include link($width:268px)
+}
+.hero__img{
+    position: absolute;
+    top: -142px;
+    right: 70px;
+}
+.hero__bonus {
+    width: 712px;
+    padding: 32px 48px;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #F4F7FA;
+    box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+    position: relative;
+    z-index: 2;
+}
+.hero__bonus-list {
+    @include display()
+}
+.hero__bonus-item1 {
+    width: 149px;
+    margin-right: 32px;
+}
+.hero__bonus-item2 {
+    width: 215px;
+    margin-right: 32px;
+}
+.hero__bonus-item3 {
+    width: 179px;
+}
+.hero__bonus-text {
+    margin-top: 8px;
+    @include textStyle($color:#303030, $fontSize:16px, $fontWeight:400, $lineHeight:26px)
+}
+
+@media (max-width: 845px){
+    .hero__img{
+        display: none;
+    }
+    .hero__content{
+        width: 100%;
+        text-align: center;
+    }
+    .hero__wrap{
+        width: 100%;
+        text-align: center;
+    }
+    .hero__bonus{
+        width: 100%;
+        margin: 0 auto; 
+    }
+    .hero{
+        padding-bottom: 154px;
+        background-image: url("../../Images/tablet.svg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .hero__bonus-list{
+        text-align: center;
+        gap: 24px;
+        @include display($direction: column);
+    }
+    .hero__bonus-item1{
+        width: 100%;
+        margin-right: 0;
+    }
+    .hero__bonus-item2{
+        width: 100%;
+        margin-right: 0;
+    }
+    .hero__bonus-item3{
+        width: 100%;
+    }
+   .hero__bonus-text{
+    margin-top: 16px;
+   }
+}
+@media (max-width:500px){
+    .hero{
+        background-position-y: 91px;
+    }
+    .hero__title{
+     @include textStyle($color:#262626, $fontSize:24px, $fontWeight:700, $lineHeight:30px );  
+    }
+    .hero__wrap{
+        margin-bottom: 16px;
+    }
+    .hero__text {
+        @include textStyle($color:#303030, $fontSize:12px, $fontWeight:400, $lineHeight:150%);
+    }
+    .hero__link{
+        max-width: 196px;
+        padding: 8px 0;
+        @include textStyle( $color: #fff, $fontSize:12px, $lineHeight:18px)
+    }
+    .hero__bonus{
+       padding: 32px 10px;
+    }
+}

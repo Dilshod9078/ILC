@@ -3,14 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <link rel="icon" href="./Images/logo-img.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>ILC</title>
 </head>
 <body>
    <!-- site Header start   -->
    <header class="site-header">
     <div class="container">
         <div class="header">
-            <!-- ...  -->
+          <div class="header__wrapper">
+            <div class="header__demo">
+                <a href="/">
+                    <img class="header__logo-img" src="./Images/logo-img.svg" alt="Site logo" width="199" height="63">
+                </a>
+                <div class="header__demo-inner">
+                <p class="header__demo-text">Первый цифровой международный
+                    юридический центр</p>
+                </div>
+            </div>
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">О компании</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">Услуги</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">Sirius</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">Тарифы</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">FAQ</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+          </div>
+          <div class="header__contact">
+            <a class="header__phone" href="tel:88005113768" >8 (800) 511-37-68</a>
+            <a class="header__link" href="#" >Войти</a>
+            <button class="mobile-btn">
+                <img class="mobile-img" src="./Images/mobile.svg" alt="Mobile icon" width="12" height="22">
+            </button>
+            <button class="hamburger-btn">
+                <img class="hamburger-img" src="./Images/hamburger.svg" alt="Hamburger icon" width="22" height="22">
+            </button>
+          </div>
         </div>
     </div>
    </header>
@@ -21,7 +68,33 @@
     <section class="hero-section">
         <div class="container">
             <div class="hero">
-                <!-- ...  -->
+               <div class="hero__content">
+                <h2 class="hero__title">Юридический полис ILC — быстрое решение сложных вопросов 24/7</h2>
+                <div class="hero__wrap">
+                <p class="hero__text">Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход 
+                    до $260 с каждого полиса, купленного по вашему приглашению.
+                    </p>
+                </div>
+                    <a class="hero__link" href="#">Попробовать бесплатно</a>
+               </div>
+               <img class="hero__img" src="./Images/hero-bg.svg" alt="Hero image" width="438" height="564">
+            </div>
+            <div class="hero__bonus">
+                <ul class="hero__bonus-list">
+                    <li class="hero__bonus-item1">
+                        <img src="./Images/time.svg" alt="O'clock icon" width="43" height="42">
+                        <p class="hero__bonus-text">Юридическая поддержка 24/7</p>
+                    </li>
+                    <li class="hero__bonus-item2">
+                        <img src="./Images/bonus-img.svg" alt="Bonus icon" width="40" height="40">
+                        <p class="hero__bonus-text">Множество возможностей 
+                            в одном полисе</p>
+                    </li>
+                    <li class="hero__bonus-item3">
+                        <img src="./Images/money-img.svg" alt="Money icon" width="53" height="40">
+                        <p class="hero__bonus-text">Бонусы партнерской программы</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
