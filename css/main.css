@@ -613,7 +613,7 @@ template {
   }
   .hero {
     padding-bottom: 154px;
-    background-image: url("../../Images/tablet.svg");
+    background-image: url("../Images/tablet.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -642,7 +642,11 @@ template {
 }
 @media (max-width: 500px) {
   .hero {
-    background-position-y: 91px;
+    background-position-y: 45px;
+    padding-bottom: 450px;
+    background-image: url("../Images/tablet.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
   .hero__title {
     color: #262626;
@@ -672,5 +676,30 @@ template {
   }
   .hero__bonus {
     padding: 32px 10px;
+  }
+}
+@media (max-width: 450px) {
+  .hero {
+    padding-bottom: 350px;
+  }
+}
+@media (max-width: 420px) {
+  .hero {
+    padding-bottom: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    padding-bottom: 260px;
+  }
+}
+@media (max-width: 370px) {
+  .hero {
+    padding-bottom: 220px;
+  }
+}
+@media (max-width: 340px) {
+  .hero {
+    padding-bottom: 180px;
   }
 }/*# sourceMappingURL=main.css.map */
